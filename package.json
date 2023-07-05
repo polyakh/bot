@@ -1,0 +1,37 @@
+{
+    "name": "telegram-bot",
+    "version": "0.0.1",
+    "author": "WeKnowIt",
+    "type": "module",
+    "main": "index.mjs",
+    "scripts": {
+        "dev": "nodemon index.mjs",
+        "clean": "rimraf ./public",
+        "prebuild": "npm run clean",
+        "build": "rollup -c",
+        "build:prod": "NODE_ENV=production rollup -c",
+        "start": "node public/bundle.js",
+        "prettier": "prettier --check \"**/*.mjs\"",
+        "prettier:fix": "prettier --write \"**/*.mjs\""
+    },
+    "dependencies": {
+        "@rollup/plugin-terser": "0.4.3",
+        "ajv": "8.12.0",
+        "dotenv": "16.0.3",
+        "libphonenumber-js": "^1.10.36",
+        "node-telegram-bot-api": "0.61.0",
+        "nodemon": "^2.0.22",
+        "open": "9.1.0",
+        "rimraf": "5.0.1"
+    },
+    "devDependencies": {
+        "husky": "8.0.3",
+        "prettier": "2.8.7",
+        "rollup": "3.25.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run prettier:fix"
+        }
+    }
+}
