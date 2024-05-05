@@ -2,6 +2,6 @@
 import "dotenv/config.js";
 //end region
 
-import { startBot } from "./bot/bot.mjs";
+import { startBot } from "./app/bot.mjs";
 
 startBot();

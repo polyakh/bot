@@ -13,8 +13,8 @@ const OPTIONS = {
   card_beaten_pesel_ukr: "Карта побиту з PESEL UKR",
   card_beaten: "Карта побиту",
   resident_card: "Карта резидента",
-  card_pole: "Карта поляка",
-}
+  card_pole: "Карта поляка"
+};
 
 const chatState = {}; // state for each chat
 
