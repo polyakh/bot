@@ -102,18 +102,6 @@ function handleFirstVisit({ bot, chatId, firstName }) {
               url: process.env.CALENDLY_SCHEDULING_URL
             }
           ],
-          [
-            {
-              text: "Запис на реєстрацію діяльності",
-              callback_data: "book_activity_registration"
-            }
-          ],
-          [
-            {
-              text: "Легалізація",
-              callback_data: "request_legalization"
-            }
-          ]
         ]
       }
     }
